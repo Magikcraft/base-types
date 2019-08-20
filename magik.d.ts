@@ -11,27 +11,10 @@ interface Memento {
 
 interface magik {
   /**
-   *
-   * Use the Node.js Event Emitter pattern to register event handlers
-   *
-   * @type {EventEmitter.EventEmitter}
-   * @memberof magik
-   */
-  Events: EventEmitter<EventKey>;
-  /**
-   * Return a Java class reference to an org.bukkit.* class.
-   *
-   * Refer to the Bukkit API documentation at https://bukkit.magikcraft.io.
-   */
-  type(classname: string): JavaType;
-
-  /**
    * Return a reference to the Magikcraft Bukkit Plugin
    *
    */
-  getPlugin(): BukkitPlugin;
-
-  TextComponent(label: string): TextComponent;
+  getPlugin(): Plugin;
 
   /**
    * Execute the callback function once, after the delay in milliseconds
@@ -67,11 +50,6 @@ interface magik {
    * Clear the interval timer.
    */
   clearInterval(handle: number): void;
-
-  /**
-   * User interface bars. These use BossBarAPI.
-   */
-  Bars: BossBarAPI;
 
   /**
    * Volare means to fly. This has you float up into the air.
