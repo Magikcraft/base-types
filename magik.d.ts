@@ -1,3 +1,7 @@
+declare const magikcraft: {
+  io: magik;
+};
+
 interface Memento {
   (value: any): void;
   (key: string | number, value: any): void;
