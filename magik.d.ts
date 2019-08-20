@@ -3,8 +3,6 @@ declare const magikcraft: {
 };
 
 interface Memento {
-  (value: any): void;
-  (key: string | number, value: any): void;
   setItem(key: string | number, value: any): void;
   getItem(key: string | number): any;
 }
